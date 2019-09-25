@@ -35,7 +35,7 @@ $(document).ready(function() {
             var burger = $("#bu").val().trim();
 
             var newBurger = {
-                name: burger,
+                burger_name: burger,
                 devoured: 0
             }
 
