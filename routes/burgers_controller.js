@@ -3,9 +3,39 @@ var db = require("../models");
 module.exports = (app) => {
     app.get("/", (req, res) => {
         db.Burger.findAll({}).then((data) => {
-            res.render("index", {burgers: data})
+            console.log(data);
+            var obj = [];
+            data.forEach(element => {
+                obj.push(element.dataValues)
+            });
+
+            console.log(obj);
+            res.render("index", {burgers: obj})
         });
+    });
+
+    app.put("/api/burger/:id", (req, res) => {
+
+
+        // db.Burger.update(
+        //     ...req.body,
+        //     {
+        //     where: {
+        //         id: req.params.id
+        //     }
+        // }).then((data) => {
+
+        // })
     })
+
+    app.post("/api/burger", (req, res) => {
+        console.log(req.body);
+        db.Burger.create(req.body).then((data) => {
+            res.status(200);
+            res.end();
+        })
+    })
+
 }
 
 
