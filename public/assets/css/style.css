@@ -1,0 +1,113 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 48pt;
+    color: #fff;
+    padding: 10px 40px 10px 40px;
+    background-color: #DB0406;
+    border: solid 5px #FDBC0E;
+    border-radius: 2px;
+    box-shadow: 2px 2px rgb(145, 108, 9)
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+}
+
+.menu, 
+.eaten {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    background-color: #DB0406;
+    border: solid 5px #FDBC0E;
+    box-shadow: 2px 2px rgb(145, 108, 9);
+    padding: 10px;
+    width: 300px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: rgb(66, 62, 45);
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    border-radius: 2px;
+    align-items: center;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+
+.devour {
+    background-color: rgb(66, 62, 45);
+    font-family: 'Anton', sans-serif;
+    color: #fff
+}
+
+.add {
+    display: flex;
+    background-color: #DB0406;
+    border: solid 5px #FDBC0E;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px rgb(145, 108, 9);
+}
+
+.next {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#submit {
+    font-family: 'Anton', sans-serif;
+    margin-top: 40px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+	border: 5px solid transparent;
+	border-bottom-color: rgba(0,0,0,0.35);
+    background: #FDBC0E;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#submit:active{
+    margin-top: 45px;
+    border-bottom-width: 0;
+}
+
+#submit:hover{
+    background: rgb(204, 153, 12);
+}

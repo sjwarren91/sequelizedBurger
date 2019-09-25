@@ -1,0 +1,48 @@
+<div class="header">
+  <div class="heading">McRonald's</div>
+</div>
+
+<section class="main">
+  <div class="menu">
+    <div class="main-heading">Menu</div>
+
+    <ul>
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burgers-block devoured=0}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+
+  </div>
+
+  <div class="eaten">
+    <div class="main-heading">Eaten</div>
+
+    <ul>
+      {{#each burgers}}
+      {{#if devoured}}
+      {{> burgers/burgers-block devoured=1}}
+      {{/if}}
+      {{/each}}
+    </ul>
+
+  </div>
+
+</section>
+
+<section class="next">
+  <div class="add">
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+      <div class="form-group">
+        <label for="bu">Burger Type:</label>
+        <input type="text" id="bu" name="name">
+      </div>
+
+      <button type="submit" id="submit">Add Burger</button>
+    </form>
+
+  </div>
+</section>

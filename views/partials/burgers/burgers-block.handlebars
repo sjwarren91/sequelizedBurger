@@ -1,0 +1,16 @@
+<li>
+	{{#if devoured}}
+	<img src="assets/images/burger_eaten.png" alt="burger" class="burger" style="opacity: 0.5">
+	{{else}}
+	<img src="assets/images/burger.png" alt="burger" class="burger">
+	{{/if}}
+
+	{{burger_name}}
+
+	{{#unless devoured}}
+	<button class="devour" data-id="{{id}}" data-devoured="{{devoured}}">
+		EAT
+	</button>
+	{{/unless}}
+
+</li>
